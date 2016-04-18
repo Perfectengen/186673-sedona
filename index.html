@@ -12,16 +12,16 @@
 
           <div class="logo">
             <a href="index.html">
-              <img src="http://placehold.it/150x100" alt="Седона">
+              <img src="http://placehold.it/150x100" width="" height="" alt="Седона">
             </a>
           </div>
 
           <nav class="main-navigation">
-            <ul class="clearfix">
-              <li class="main-navigation_left"><a href="#">Информация</a></li>
-              <li class="main-navigation_left"><a href="#">Фото и видео</a></li>
-              <li class="main-navigation_right"><a href="#">Карта штата</a></li>
-              <li class="main-navigation_right"><a href="#">Гостиницы</a></li>
+            <ul>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="#">Гостиницы</a></li>
             </ul>
           </nav>
 
@@ -30,10 +30,7 @@
       <main class="main-content">
 
         <div class="welcome">
-          <div class="welcome-text">
-            <img src="http://placehold.it/150x100" alt="Welcome to the gargeous SEDONA">
-          </div>
-          <div class="welcome-mask"></div>
+          <img src="http://placehold.it/150x100" width="" height="" alt="Welcome to the gargeous SEDONA">
         </div>
 
         <section class="promo">
@@ -47,19 +44,21 @@
             <div class="reason-num">— №1 —</div>
             <p class="reason-desc">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="reason-img" src="http://placehold.it/150x100" alt="Настоящий городок">
+          <div class="reason img">
+            <img src="http://placehold.it/150x100" width="" height="" alt="Настоящий городок">
+          </div>
         </div>
 
         <div class="features clearfix">
-          <div class="feature feature_house">
+          <div class="feature feature-house">
             <h2 class="feature-title">Жилье</h2>
             <p class="feature-desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="feature feature_eat">
+          <div class="feature feature-eat">
             <h2 class="feature-title">Еда</h2>
             <p class="feature-desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
-          <div class="feature feature_gift">
+          <div class="feature feature-gift">
             <h2 class="feature-title">Сувениры</h2>
             <p class="feature-desc">Не только китайского, но и местного производства!</p>
           </div>
@@ -67,7 +66,9 @@
 
         <div class="reason-big">
           <div class="reason">
-            <img class="reason-img" src="http://placehold.it/150x100" alt="Мост дьявола">
+            <div class="reason-img">
+              <img src="http://placehold.it/150x100" width="" height="" alt="Мост дьявола">
+            </div>
             <h2 class="reason-title">Там есть мост дьявола</h2>
             <div class="reason-num">— №2 —</div>
           </div>
@@ -96,7 +97,18 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
-          <form class="hotel-search-form" action="#" method="post">
+        </div>
+
+      </main>
+
+      <div class="footer-map">
+
+        <div class="map">
+          <!--map-frame-->
+        </div>
+        
+        <div class="hotel-search-form">
+          <form action="#" method="post">
             <fieldset class="search-date">
               <label for="date-in">Дата заезда:</label>
               <input type="text" id="date-in" name="date-in" class="date-in" value="24 апреля 2016">
@@ -117,34 +129,32 @@
               <input type="text" id="people-child" name="people-child" class="people-child" value="0">
               <button class="people-minus" type="button"><i class="icon-minus"></i></button>
             </fieldset>
-            <input type="submit" name="search-submit" class="search-submit" value="Найти">
+            <button type="submit" class="search-submit">Найти</button>
           </form>
         </div>
 
-      </main>
+        <footer class="main-footer">
 
-      <footer class="main-footer">
+          <div class="footer-row clearfix">
 
-        <div class="footer-row clearfix">
-          <div class="hashtag">
-            <a href="#">#visitsedona</a>
+            <a href="#" class="hashtag">#visitsedona</a>
+
+            <div class="social">
+              <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
+              <a href="#" class="social-item"><i class="icon-facebook">Facebook</i></a>
+              <a href="#" class="social-item"><i class="icon-youtube">Youtube</i></a>
+            </div>
+
+            <div class="copyright">
+              <span>Website by</span>
+              <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
+                <img src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
+              </a>
+            </div>
           </div>
 
-          <div class="social">
-            <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
-            <a href="#" class="social-item"><i class="icon-facebook">Facebook</i></a>
-            <a href="#" class="social-item"><i class="icon-youtube">Youtube</i></a>
-          </div>
-
-          <div class="copyright">
-            <span>Website by</span>
-            <span class="logo-htmlacademy">
-              <img src="http://placehold.it/150x100" alt="HTML Academy">
-            </span>
-          </div>
-        </div>
-
-      </footer>
+        </footer>
+      </div>
 
     </div>
   </body>

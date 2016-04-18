@@ -12,16 +12,16 @@
 
           <div class="logo">
             <a href="index.html">
-              <img src="http://placehold.it/150x100" alt="Седона">
+              <img src="http://placehold.it/150x100" width="" height="" alt="Седона">
             </a>
           </div>
 
           <nav class="main-navigation">
-            <ul class="clearfix">
-              <li class="main-navigation_left"><a href="#">Информация</a></li>
-              <li class="main-navigation_left"><a href="#">Фото и видео</a></li>
-              <li class="main-navigation_right"><a href="#">Карта штата</a></li>
-              <li class="main-navigation_right">Гостиницы</li>
+            <ul>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li>Гостиницы</li>
             </ul>
           </nav>
 
@@ -32,7 +32,7 @@
         <section class="search-field">
 
           <form class="hotel-field-form" action="#" method="post">
-            <fieldset class="">
+            <fieldset class="hotel-infrastructure">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" name="pool" id="pool" class="pool" checked>
               <label for="pool">Бассейн</label>
@@ -41,7 +41,7 @@
               <input type="checkbox" name="wi-fi" id="wi-fi" class="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </fieldset>
-            <fieldset class="">
+            <fieldset class="hotel-var">
               <legend>Тип жилья:</legend>
               <input type="checkbox" name="hotel" id="hotel" class="hotel" checked>
               <label for="hotel">Отель</label>
@@ -69,28 +69,28 @@
               <div class="range-toogle range-toogle-min"></div>
               <div class="range-toogle range toogle-max"></div>
             </div>
-            <input class="filter-button" type="submit" value="Показать">
+            <button class="filter-button" type="submit">Показать</button>
           </div>
 
         </section>
 
-        <div class="search-sort">
-          <h1 class="serch-sort-title">Найдено: 3</h1>
-          <span>Сортировка:</span>
-          <ul class="type-sort">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <div class="sort-up-down">
+        <ul class="search-sort">
+          <li class="search-sort-title">Найдено:3</li>
+          <li>Сортировка:</li>
+          <li class="type-sort"><a href="#">По цене</a></li>
+          <li class="type-sort"><a href="#">По типу</a></li>
+          <li class="type-sort"><a href="#">По рейтингу</a></li>
+          <li class="sort-up-down">
             <a href="#"><i class="icon-up-dir">Вверх</i></a>
             <a href="#"><i class="icon-down-dir">Вниз</i></a>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="search-result">
+          <div class="hotel-picture">
+            <img src="http://placehold.it/150x100" width="" height="" alt="Hotel">
+          </div>
           <div class="search-result-desc">
-            <img src="http://placehold.it/150x100" alt="Hotel" class="hotel-picture">
             <h2 class="search-result-title">Amara Resort & Spa</h2>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-min-price">От 3500 р.</span>
@@ -109,8 +109,10 @@
         </div>
 
         <div class="search-result">
+          <div class="hotel-picture">
+            <img src="http://placehold.it/150x100" width="" height="" alt="Hotel">
+          </div>
           <div class="search-result-desc">
-            <img src="http://placehold.it/150x100" alt="Hotel" class="hotel-picture">
             <h2 class="search-result-title">Desert Quail Inn</h2>
             <span class="hotel-type">Мотель</span>
             <span class="hotel-min-price">От 2000 р.</span>
@@ -127,9 +129,10 @@
         </div>
 
         <div class="search-result">
+          <div class="hotel-picture">
+            <img src="http://placehold.it/150x100" width="" height="" alt="Hotel">
+          </div>
           <div class="search-result-desc">
-            <img src="http://placehold.it/150x100" alt="Hotel" class="hotel-picture">
-            <h2 class="search-result-title">Villas at Poco Diablo</h2>
             <span class="hotel-type">Аппартаменты</span>
             <span class="hotel-min-price">От 4000 р.</span>
             <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
@@ -150,9 +153,8 @@
       <footer class="main-footer">
 
         <div class="footer-row clearfix">
-          <div class="hashtag">
-            <a href="#">#visitsedona</a>
-          </div>
+
+          <a href="#" class="hashtag">#visitsedona</a>
 
           <div class="social">
             <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
@@ -162,9 +164,9 @@
 
           <div class="copyright">
             <span>Website by</span>
-            <span class="logo-htmlacademy">
-              <img src="http://placehold.it/150x100" alt="HTML Academy">
-            </span>
+            <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
+              <img src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
+            </a>
           </div>
         </div>
 
