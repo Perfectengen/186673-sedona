@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы в Седоне</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&&amp;subset=cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -30,10 +32,10 @@
 
       <main class="hotel-content">
 
-        <section class="search-field">
+        <section class="search-field clearfix">
 
-          <form class="hotel-field-form" action="#" method="post">
-            <fieldset class="hotel-infrastructure">
+          <form action="#" method="post">
+            <fieldset class="hotel-infrastructure to-left">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" name="pool" id="pool" class="pool" checked>
               <label for="pool">Бассейн</label>
@@ -42,7 +44,7 @@
               <input type="checkbox" name="wi-fi" id="wi-fi" class="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </fieldset>
-            <fieldset class="hotel-var">
+            <fieldset class="hotel-var to-left">
               <legend>Тип жилья:</legend>
               <input type="checkbox" name="hotel" id="hotel" class="hotel" checked>
               <label for="hotel">Отель</label>
@@ -51,52 +53,56 @@
               <input type="checkbox" name="appart" id="appart" class="appart" checked>
               <label for="appart">Аппартаменты</label>
             </fieldset>
-          </form>
 
-          <div class="filter">
-            <div class="filter-title">Стоимость в сутки (р):</div>
-            <div class="filter-price">
-              <label class="min-price">от
-                <input type="text" name="min-price" value="0">
-              </label>
-              <label class="max-price">до
-                <input type="text" name="max-price" value="3000">
-              </label>
-            </div>
-            <div class="filter-range">
-              <div class="scale">
-                <div class="bar"></div>
+            <div class="filter to-right">
+              <div class="filter-title">Стоимость в сутки (р):</div>
+              <div class="filter-price">
+                <label class="min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
               </div>
-              <div class="range-toogle range-toogle-min"></div>
-              <div class="range-toogle range toogle-max"></div>
+              <div class="filter-range">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toogle range-toogle-min"></div>
+                <div class="range-toogle range toogle-max"></div>
+              </div>
+              <button class="filter-button" type="submit">Показать</button>
             </div>
-            <button class="filter-button" type="submit">Показать</button>
-          </div>
+          </form>
 
         </section>
 
-        <ul class="search-sort">
-          <li class="search-sort-title">Найдено:3</li>
-          <li>Сортировка:</li>
+        <ul class="search-sort clearfix">
+          <li class="search-sort-title">Найдено: 3</li>
+          <li class="sort">Сортировка:</li>
           <li class="type-sort"><a href="#">По цене</a></li>
           <li class="type-sort"><a href="#">По типу</a></li>
           <li class="type-sort"><a href="#">По рейтингу</a></li>
-          <li class="sort-up-down">
+          <li class="sort-up-down to-right">
             <a href="#"><i class="icon-up-dir">Вверх</i></a>
             <a href="#"><i class="icon-down-dir">Вниз</i></a>
           </li>
         </ul>
 
-        <div class="search-result">
+        <div class="search-result clearfix">
           <div class="hotel-picture">
             <img src="img/hotel-1.jpg" width="135" height="90" alt="Hotel">
           </div>
           <div class="search-result-desc">
             <h2 class="search-result-title">Amara Resort & Spa</h2>
-            <span class="hotel-type">Гостиница</span>
-            <span class="hotel-min-price">От 3500 р.</span>
-            <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
-            <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            <div class="hotel-info">
+              <span class="hotel-type">Гостиница</span>
+              <span class="hotel-min-price">От 3500 р.</span>
+            </div>
+            <div class="hotel-info-btn">
+              <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
+              <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-stat">
             <div class="hotel-star">
@@ -105,40 +111,48 @@
               <i class="icon-star"></i>
               <i class="icon-star"></i>
             </div>
-            <div class="hotel-rating hotel-btn">Рейтинг:8,5</div>
+            <div class="hotel-rating hotel-btn">Рейтинг: 8,5</div>
           </div>
         </div>
 
-        <div class="search-result">
+        <div class="search-result clearfix">
           <div class="hotel-picture">
             <img src="img/hotel-2.jpg" width="135" height="90" alt="Hotel">
           </div>
           <div class="search-result-desc">
             <h2 class="search-result-title">Desert Quail Inn</h2>
-            <span class="hotel-type">Мотель</span>
-            <span class="hotel-min-price">От 2000 р.</span>
-            <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
-            <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            <div class="hotel-info">
+              <span class="hotel-type">Мотель</span>
+              <span class="hotel-min-price">От 2000 р.</span>
+            </div>
+            <div class="hotel-info-btn">
+              <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
+              <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-stat">
             <div class="hotel-star">
               <i class="icon-star"></i>
               <i class="icon-star"></i>
             </div>
-            <div class="hotel-rating hotel-btn">Рейтинг:8,9</div>
+            <div class="hotel-rating hotel-btn">Рейтинг: 8,9</div>
           </div>
         </div>
 
-        <div class="search-result">
+        <div class="search-result clearfix">
           <div class="hotel-picture">
             <img src="img/hotel-3.jpg" width="135" height="90" alt="Hotel">
           </div>
           <div class="search-result-desc">
             <h2 class="search-result-title">Villas at Poco Diablo</h2>
-            <span class="hotel-type">Аппартаменты</span>
-            <span class="hotel-min-price">От 4000 р.</span>
-            <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
-            <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            <div class="hotel-info">
+              <span class="hotel-type">Аппартаменты</span>
+              <span class="hotel-min-price">От 4000 р.</span>
+            </div>
+            <div class="hotel-info-btn">
+              <a href="#" class="hotel-more-info hotel-btn">Подробнее</a>
+              <a href="#" class="hotel-booking hotel-btn">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-stat">
             <div class="hotel-star">
@@ -146,32 +160,25 @@
               <i class="icon-star"></i>
               <i class="icon-star"></i>
             </div>
-            <div class="hotel-rating hotel-btn">Рейтинг:9,2</div>
+            <div class="hotel-rating hotel-btn">Рейтинг: 9,2</div>
           </div>
         </div>
 
       </main>
 
       <footer class="main-footer">
-
-        <div class="footer-row clearfix">
-
-          <a href="#" class="hashtag">#visitsedona</a>
-
+        <a href="#" class="hashtag">#visitsedona</a>
           <div class="social">
             <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
             <a href="#" class="social-item"><i class="icon-facebook">Facebook</i></a>
             <a href="#" class="social-item"><i class="icon-youtube">Youtube</i></a>
           </div>
-
           <div class="copyright">
             <span>Website by</span>
             <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
               <img src="img/copyright-logo.png" width="113" height="39" alt="HTML Academy">
             </a>
           </div>
-        </div>
-
       </footer>
 
     </div>

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&&amp;subset=cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,8 +12,8 @@
     <div class="container">
 
       <header class="main-header">
-
-          <div class="logo">
+      
+        <div class="logo">
             <a href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="Седона">
             </a>
@@ -31,26 +33,29 @@
       <main class="main-content">
 
         <div class="welcome">
-          <img src="img/welcome.png" width="458" height="352" alt="Welcome to the gargeous SEDONA">
+          <div class="welcome-img">
+            <img src="img/welcome.png" width="458" height="352" alt="Welcome to the gargeous Sedona. "Because the Grand Canyon sucks!" ">
+          </div>
         </div>
+         
 
         <section class="promo">
           <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
-        <div class="reason-big">
-          <div class="reason">
+        <div class="reason-big clearfix">
+          <div class="reason to-left">
             <h2 class="reason-title">Настоящий городок</h2>
             <div class="reason-num">— №1 —</div>
             <p class="reason-desc">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="reason-img">
+          <div class="reason-img to-right">
             <img src="img/reason-1.jpg" width="800" height="256" alt="Настоящий городок">
           </div>
         </div>
 
-        <div class="features clearfix">
+        <div class="features">
           <div class="feature feature-house">
             <h2 class="feature-title">Жилье</h2>
             <p class="feature-desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -65,18 +70,18 @@
           </div>
         </div>
 
-        <div class="reason-big">
-          <div class="reason">
-            <div class="reason-img">
-              <img src="img/reason-2.jpg" width="800" height="256" alt="Мост дьявола">
-            </div>
-            <h2 class="reason-title">Там есть мост дьявола</h2>
-            <div class="reason-num">— №2 —</div>
+        <div class="reason-big clearfix">
+          <div class="reason-img to-left">
+            <img src="img/reason-2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
-          <p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="reason to-right">
+            <h2 class="reason-title">Там есть<br> мост дьявола</h2>
+            <div class="reason-num">— №2 —</div>
+            <p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div>
 
-        <div class="reason-small clearfix">
+        <div class="reason-small">
           <div class="reason">
             <h2 class="reason-title">Небольшая площадь</h2>
             <div class="reason-num">— №3 —</div>
@@ -96,7 +101,7 @@
 
         <div class="hotel-offer">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
         </div>
 
@@ -104,9 +109,7 @@
 
       <div class="footer-map">
 
-        <div class="map">
-          <!--map-frame-->
-        </div>
+        <div class="map"></div>
 
         <div class="hotel-search-form">
           <form action="#" method="post">
@@ -135,19 +138,17 @@
         </div>
 
         <footer class="main-footer">
-          <div class="footer-row clearfix">
-            <a href="#" class="hashtag">#visitsedona</a>
-            <div class="social">
-              <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
-              <a href="#" class="social-item"><i class="icon-facebook">Facebook</i></a>
-              <a href="#" class="social-item"><i class="icon-youtube">Youtube</i></a>
-            </div>
-            <div class="copyright">
-              <span>Website by</span>
-              <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
-                <img src="img/copyright-logo.png" width="113" height="39" alt="HTML Academy">
-              </a>
-            </div>
+          <a href="#" class="hashtag">#visitsedona</a>
+          <div class="social">
+            <a href="#" class="social-item"><i class="icon-twitter">Twitter</i></a>
+            <a href="#" class="social-item"><i class="icon-facebook">Facebook</i></a>
+            <a href="#" class="social-item"><i class="icon-youtube">Youtube</i></a>
+          </div>
+          <div class="copyright">
+            <span>Website by</span>
+            <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
+              <img src="img/copyright-logo.png" width="113" height="39" alt="HTML Academy">
+            </a>
           </div>
         </footer>
 
